@@ -1,16 +1,7 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven'
-    }
-
     stages {
-        stage('Clone') {
-            steps {
-                git 'https://github.com/Anujnandawade17/anuj-lab11.git'
-            }
-        }
 
         stage('Build') {
             steps {
